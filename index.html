@@ -1,0 +1,569 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirIndia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="airindia.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="top body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" style="margin-top: 0;padding-top: 0;height: 110px;">
+            <a class="navbar-brand" href=""><img src="images/airline_logo.svg" alt="" style="height: 94px; margin-left: 8px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="max-width: fit-content; z-index: 500;">
+              <ul class="navbar-nav" style="padding-top: 56px; " >
+                <li class="nav-item dropdown " >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                      Manage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Refund Request</a>
+                      <a class="dropdown-item" href="#">Flight Schedule</a>
+                      <a class="dropdown-item" href="#">Self Service Reaccomodation</a>
+                      <a class="dropdown-item" href="#">Domestic Fares and Panalties</a>
+                      <a class="dropdown-item" href="#">Star Alliance Seat Assignment</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                        Offers
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Domestic Schemes</a>
+                        <a class="dropdown-item" href="#">Corporate Houses</a>
+                        <a class="dropdown-item" href="#">International Schemes</a>
+                        <a class="dropdown-item" href="#">Group Bookings</a>
+                        <a class="dropdown-item" href="#">Bid and Upgrade</a>
+                        <a class="dropdown-item" href="#">Preferred Seat Scheme</a>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                      Travel Info
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Before you fly</a>
+                        <a class="dropdown-item" href="#">On Ground Services</a>
+                        <a class="dropdown-item" href="#">On Board Facilities</a>
+                        <a class="dropdown-item" href="#">Airport Information</a>
+                        <a class="dropdown-item" href="#">Code Share Partners</a>
+                        <a class="dropdown-item" href="#">Security Regulation</a>
+                        <a class="dropdown-item" href="#">Forms and Downloads</a>
+                        <a class="dropdown-item" href="#">Star Alliance Lounges</a>
+                        <a class="dropdown-item" href="#">Star Alliance Lounge Access Policy</a>
+                        <a class="dropdown-item" href="#">Star Alliance Gold Track</a>
+                        <a class="dropdown-item" href="#">EU Regulation</a>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                      Flying Returns
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Important Updates</a>
+                        <a class="dropdown-item" href="#">About Flying Returns</a>
+                        <a class="dropdown-item" href="#">Join Now</a>
+                        <a class="dropdown-item" href="#">Redeem Points</a>
+                        <a class="dropdown-item" href="#">Alliance Partners</a>
+                        <a class="dropdown-item" href="#">Flying Returns FAQs</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Promotions</a>
+                        <a class="dropdown-item" href="#">Premium Clubs</a>
+                        <a class="dropdown-item" href="#">Earn Points</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                      Baggage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Hand Luggage</a>
+                        <a class="dropdown-item" href="#">Checked Baggage Allowances</a>
+                        <a class="dropdown-item" href="#">Excess Baggage</a>
+                        <a class="dropdown-item" href="#">Special Baggage</a>
+                        <a class="dropdown-item" href="#">Baggage tips and restricted items</a>
+                        <a class="dropdown-item" href="#">Lost,Damaged and Delayed delivery of Baggage</a>
+                        <a class="dropdown-item" href="#">Unaccompanied baggage</a>
+                        <a class="dropdown-item" href="#">WorldTracer Baggage Tracing System</a>
+                        <a class="dropdown-item" href="#">Pre Paid Baggage Charges</a>
+                        <a class="dropdown-item" href="#">Miscellaneous Baggage Information</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                        Contact
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" max-width: fit-content;">
+              <ul class="navbar-nav" style="margin-right: 66px; padding-top: 72px; padding-bottom: 16px;">
+                <li class="nav-item dropdown">
+                  <div class="d-flex my-2 my-lg-0">
+                    <ul class="navbar-right" style="padding-left: 0;">
+                    <div class="lang" style="display: inline-flex;">
+                      <img src="images/language_logo.png" alt="" style="height: 23px; width: 29px; margin-top: 9px; margin-right: 3px; margin-left: 30px;">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ed1c24;">
+                       EN
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" style=" border: solid; border-color: rgb(194, 188, 188); border-width: 1px; height: 27px; width: 12em; padding-left: 5px; " href="#">
+                        India
+                      </a>
+                      <a class="dropdown-item" style=" border: solid; border-color: rgb(194, 188, 188); border-width: 1px; height: 27px; width: 12em; padding-left: 5px; margin-top: 8px;" href="#">
+                      English</a>
+                      </div>
+                    </div>
+                  </ul>
+
+                  <li class="nav-item dropdown searchIconNew">
+                    <span class="nav-link" style="margin-top: 5px;">
+                      <button style="border: none; background: white;"><span><img src="images/search_logo.png" width="16" height="17" alt="Search Icon" style="border: none;"></span></button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="border-radius: 0;">
+                      <div class="input-group" style="width: 260px; height: 40px; display: inline-flex; padding-top: 3px; padding-bottom: 10px;">
+                        <div class="form-outline" style="width: 180px; padding-left: 10px;">
+                          <input type="search" id="form1" class="form-control" placeholder="Search" style="border-radius: 0; font-size: small;">
+                        </div>
+                        <button type="button" class="btn btn-primary" style="background: #cf2436; width: 62px; height: 34px; border-radius: 0; font-size: small; border: none; margin-left: 5px; padding-right: 10px;">
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                    </span>
+                    
+                </li>
+                  <li class="nav-item searchIconNew">
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://loyalty.airindia.in/" target="_blank" style="color: #ed1c24;">
+                      <img src="images/login-icon.svg" width="17" height="17" alt="Login icon">
+                       Login/Enrol
+                    </a>
+                  </li>
+                  </div>
+                </li>
+              </ul>
+              <a class="tata-brand" href="https://www.tata.com/" target="_blank">
+                <img src="images/tata-logo.svg" alt="Air India">
+              </a>
+            </div>
+          </nav>
+    </div>
+
+    <div class="divider-bar d-sm-none d-lg-block"></div>
+
+    <div class="slider-section">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url(images/slide1.jpg);">
+            <div class="post-1">
+              <div class="banner-text-wing banner-fontfamily-wing banner-leftalign-wing" style="font-size: 3rem; font-weight: 620;">WELCOME
+              <div class="banner-subtext-wing banner-fontfamily-wing banner-leftalign-wing" style="font-size: 2rem; font-weight: 620;">
+                "TO THE NEW ERA"
+                <div class="banner-img-wing banner-leftalign-wing">
+                  <img src="images/WingsOFChange.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="carousel-item " style="background-image: url(images/slide2.jpg);">
+            <div class="post-2">
+              <div class="banner_leftalign_baggage banner_left-align_pos banner-font-normal">
+                <span class="line-1 banner-text-baggage" style="font-size: 3.5rem; line-height: 4.17rem; font-weight: 450;">
+                  Carry More.
+                  <br>
+                   Pay Less.
+                </span>
+                <div>
+                  <span class="banner-subtext-baggage banner-text-black" style="line-height: 3.5; font-size: small; color: #000000">
+                    "Get "
+                    <span style="font-weight: bold; "> 20% OFF</span>
+                    " on booking your excess baggage in"
+                    <span style="font-weight: bold;">advance.</span>
+                  </span>
+                </div>
+                <div>
+                  <span class="banner_terms_cond banner-term-cond-baggage banner-text-black" style="font-size: 11px; line-height: 10; color: #000000;">T&C apply.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item" style="background-image: url(images/slide3.jpg);">
+            <div class="post-3">
+              <div class="banner_leftalign_baggage banner_left-align_pos banner-font-normal">
+                <span class="line-1 banner-text-baggage" style="font-size: 3.5rem; line-height: 4.17rem; font-weight: 450;">
+                  Fly Like
+                  <br>
+                    a Maharaja!
+                </span>
+                <div>
+                  <span class="banner-subtext-baggage banner-text-black" style="line-height: 3.5; font-size: small; color: #000000">
+                    <span style="font-weight: bold; ">Get Upfront</span>
+                    "Upgrades to Business Class"
+                  </span>
+                </div>
+                <div>
+                  <span class="banner_terms_cond banner-term-cond-baggage banner-text-black" style="font-size: 11px; line-height: 10; color: #000000;">T&C apply.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(images/slide4.jpg);">
+            <div class="post-4">
+              <div class="banner_leftalign_baggage banner_left-align_pos banner-font-normal">
+                <span class="line-1 banner-text-baggage" style="font-size: 3.5rem; line-height: 4.17rem; font-weight: 450;">
+                  Fly With Comfort
+                  <br>
+                   by Your Side
+                </span>
+                <div>
+                  <span class="banner-subtext-baggage banner-text-black" style="line-height: 3.5; font-size: small; color: #000000">
+                    "Now, "
+                    <span style="font-weight: bold; "> book a Preffered Seat</span>
+                    " next to yours"
+                  </span>
+                </div>
+                <div>
+                  <span class="banner_terms_cond banner-term-cond-baggage banner-text-black" style="font-size: 11px; line-height: 10; color: #000000;">T&C apply.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(images/slide5.jpg);">
+            <div class="post-5">
+              <div class="banner_left_align_knowmore banner_left-align_pos banner-text-knowmore bannertext-color font-normal" style="color: white; font-size: 1.4rem; line-height: 1.7rem; font-weight: 400; position: absolute; width: 45%;">
+                <span class="banner-spanfontstyle" style="font-size: 1.4rem;font-weight: 900; line-height: 1.7rem; font-weight: bolder; color: #BE373C;">
+                  Be the first
+                </span>
+                to experience a premium way to fly on
+                <br>
+                 our flights from
+                <br>
+                " Mumbai to San Francisco and "
+                <br>
+                " San Francisco to Mumbai. "
+                <br>
+                <button style="border-radius: 30px;width: 125px; height: 40px; background: #BE1E24; line-height: 1.7rem; display: inline-block; margin-top: 15px; margin-bottom: 40px;">
+                  <a href="https://content.airindia.in/premiumeconomy" style="font-size: 14px; font-weight: bold; color: white;">Know More</a>
+                </button>
+                <div>
+                  <span class="banner-subtext-knowmore" style="line-height: 1.3rem;font-size: small; color: white;">
+                    "Get more amenities and choices at an introductory extra charge starting at rs8985/USD 110."
+                  </span>
+                </div>
+                <div>
+                  <span class="banner_terms_cond" style="font-size: 11px; color: white;">T&C apply.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="images/slide6.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="main_form" style="background: #f8f8f8;">
+      <div class="container d-flex justify-content-center">
+        <div class="form_data">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs col-lg-12 col-md-6" style="width: 1110px; padding-right: 0;" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+                <i class="ri-plane-line">
+                </i>Search Flights
+              </a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#profile" role="tab">
+                <i class="ri-price-tag-3-line">
+                </i>Manage Booking
+              </a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+                <i class="ri-checkbox-line">
+                </i>Check-in
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+                <i class="ri-time-line">
+                </i>Flight-Status
+              </a>
+           </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content" style="border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+          <div class="radio-btn">
+            <input type="radio" class="btn" name="check" checked="checked"><span>One Way</span>
+            <input type="radio" class="btn" name="check"><span>Round Trip</span>
+            <a href="https://www.airindia.in/multicity.htm" style="padding-left: 30px;margin-right: 5px;font-size: 18px;font-weight: 600;color: #707070;">Multi City</a>
+          </div>
+          <div class="booking-form">
+            <input type="text" class="form-control" placeholder="From">
+            <input type="text" class="form-control" placeholder="To">
+          </div>
+          <div class="input-grp" style="margin-left: 30px;">
+            <input type="date" class="form-control select-date" >
+            <input type="date" class="form-control select-date">
+            
+            <div class="input-grp" style="margin-right: 13px;">
+              <label class="row2-text">Adult</label>
+              <input type="number" class="form-control" style="width: 80px;" value="1">
+            </div>
+
+            <div class="input-grp">
+              <label class="row2-text">Children</label>
+              <input type="number" class="form-control" style="width: 80px;" value="0">
+            </div>
+
+            <div class="input-grp">
+              <label class="row2-text" style="padding-left: 17px;">Infant</label>
+              <input type="number" class="form-control" style="width: 80px;" value="0">
+            </div>
+          </div>
+          <div class="input-grp">
+            <select class="custom-select">
+              <option value="1">Concessionary Type</option>
+              <option value="2">Armed Forces</option>
+              <option value="3">Bravery Awardee</option>
+              <option value="4">LTC-Leave Travel Concession</option>
+              <option value="5">ParaMilitary Force</option>
+              <option value="6">Reserve Engineer</option>
+              <option value="7">Student</option>
+              <option value="7">Senior Citizen</option>
+              <option value="7">War Widow</option>
+              <option value="7">War Disabled Officer</option>
+            </select>
+
+            <select class="custom-select">
+              <option value="1">Economy</option>
+              <option value="2">Business</option>
+              <option value="3">First</option>
+            </select>
+
+            <a href="https://www.airindia.in/concessionary-fare.htm" class="eligiblity">Check Eligiblity</a>
+            <input type="text" placeholder="Promotion Code" class="custom-select">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="color: #be1e24; margin-top: 48px; margin-left: 13px; font-weight: 400;">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+          </div>
+          <div class="input-grp">
+            <a href="https://www.airindia.in/COVID-19-UPDATED.htm" class="caption">Visit covid-19 guidelines for current destinations, travel advice and more.</a>
+            <button type="button" onclick="myFunction()" class="search-btn">Search</button>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top_line text-center">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12"><marquee onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 6, 0);" scrollamount="6">
+      <p>As per the latest Guidelines for International Arrivals valid w.e.f. 13th February 2023 (11.00 IST), the mandatory self-declaration on Air Suvidha by international arriving passengers has been discontinued.
+        <span style="color:rgb(255,0,0); font-weight:bold">
+       |</span> Effective 09th January 2023 at 1030 IST (AM) onwards, Non-immigrant passengers travelling to USA require "Proof of Being Fully Vaccinated Against COVID-19” form filled and signed before arriving into airport:<a href="proof-of-being-fully-vaccinated.htm">
+        <span style="color:#DD1616">KNOW
+       MORE</span></a></p>
+      </marquee></div>
+      </div>
+      </div>
+    </div>
+
+    <a href="https://www.airindia.in/non-stop-flight.htm" style="text-decoration: none;">
+      <div class="backimg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="join">FLY</h2>
+              <h4 class="fly">NON-STOP!</h4>
+                <p class="find">Experience our non stop flights to USA, Europe, UK, Australia, Far-East, SEA and other international destinations with seamless connectivity in India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <div class="differnce"><a href=" /on-board-experience.htm" target="_blank" style="text-decoration:none"></a>
+      <div class="container"><a href=" /on-board-experience.htm" target="_blank" style="text-decoration:none"></a>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="boxround"><a href="/press-releases.htm" target="_blank" class="pic-1"></a></div>
+            <h5>Latest News </h5>
+          </div>
+          <div class="col-md-3">
+            <div class="boxround"><a href="/cargo-operation.htm" target="_blank" class="pic-2"></a></div>
+            <h5>Cargo</h5>
+          </div>
+          <div class="col-md-3">
+            <div class="boxround"><a href="/online-booking-faqs.htm" target="_blank" class="pic-3"></a></div>
+            <h5>FAQs </h5>
+          </div>
+          <div class="col-md-3">
+            <div class="boxround"><a href="/customer-support.htm" target="_blank" class="pic-4"></a></div>
+            <h5>Contact </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="foot_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="about-airindia.htm">About Air India</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/images/pdf/Updated_Citizen_Charter_Nov14.pdf">Citizen Charter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/images/pdf/Clean_copy_Conditions_of_Carriage_09112022.pdf">Conditions of Carriage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ai-in-the-usa.htm">US DOT Regulations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.airindia.in/terms-conditions.htm">Terms and Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.airindia.in/disclaimer.htm">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="forms-and-downloads.htm">Forms and Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ai-in-canada.htm">Canada Regulations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/images/pdf/Corporate-Environment-Policy-AUG-2021.pdf">Corporate Environment Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="https://vigilance.airindia.in/">Vigilance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact-details.htm">Contact Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.airindiaexpress.in/en">Air India Express</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Statuary-Information.htm">Statutory Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="GST-Registration.htm">GST</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="sitemap.htm">Sitemap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://content.airindia.in/careers/overview" target="_blank">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="travel-agents.htm">Travel Agents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="online-booking-faqs.htm">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="new-pets.htm">Carriage of Pets</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="row align-items-center mobilehide">
+              <div class="footer_icon">
+                <a href="https://www.instagram.com/airindia.in/?hl=en" target="_blank" class="fb-ic">
+                  <img src="images/footer-2.svg" width="29" height="29" alt="Instagram icon">
+                </a>
+                <a class="fb-ic" href="https://twitter.com/airindiain" target="_blank">
+                  <img src="images/footer-3.svg" width="29" height="29" alt="Twitter Icon">
+                </a>
+                <a class="fb-ic" href="https://www.facebook.com/AirIndia/" target="_blank">
+                  <img src="images/footer-4.svg" width="29" height="29" alt="Facebook icon">
+                </a>
+                <a class="fb-ic" href="https://www.youtube.com/channel/UCnfpyluc2VymxpxWpiL9Oaw" target="_blank">
+                  <img src="images/footer-5.svg" width="29" height="29" alt="Youtube icon">
+                </a>
+              </div>
+              <div class="app_dwn">
+                <div class="buttons">
+                  <a href="https://itunes.apple.com/us/app/air-india/id932302964?mt=8" target="_blank">
+                    <img src="images/footer-6.png" alt="Appstore icon">
+                  </a>
+                </div>
+                <div class="buttons">
+                  <a href="https://play.google.com/store/apps/details?id=com.bets.airindia.ui&amp;hl=en" target="_blank">
+                    <img src="images/footer-7.png" alt="Google play icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="row mt-4 align-items-center moblie_bg">
+        <div class="col-md-8">
+          <div class="footer-copyright">
+            <p>Copyright © 2023 Air India Ltd. All rights reserved.<br>
+            <a href="terms-conditions.htm" target="_blank">Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 footer_right">
+          <img src="images/footer-10.png" alt="Air India Logo">
+          <p><img src="images/footer-8.svg" alt="Star Alliance Logo" width="200" height="45"></p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <a accesskey="3" id="backToTop" title="Back to Top" href="#top" style="">Back to Top</a>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
